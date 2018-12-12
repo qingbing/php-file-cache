@@ -1,0 +1,37 @@
+{
+    "name": "qingbing/php-file-cache",
+    "description": "组件'file-cache' : 文件缓存的相关解析和操作",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "cache",
+        "FileCache",
+        "caching",
+        "file-cache",
+        "file-caching"
+    ],
+    "homepage": "http://www.phpcorner.net",
+    "authors": [
+        {
+            "name": "qingbing",
+            "email": "780042175@qq.com"
+        }
+    ],
+    "require": {
+        "qingbing/php-helper": ">=1.0, <2.0",
+        "qingbing/php-config": ">=1.0, <2.0",
+        "qingbing/php-abstracts-store": ">=1.0, <2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Components\\": "src/components"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TestCore\\": "test/core",
+            "Test\\": "test/src"
+        }
+    }
+}
