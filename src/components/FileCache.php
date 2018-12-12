@@ -17,11 +17,11 @@ class FileCache extends Store
     /**
      * @var string 命名空间
      */
-    public $namespace = 'cf';
+    public $namespace = 'pf';
     /**
      * @var string key的前缀
      */
-    public $prefix = 'cf_';
+    public $prefix = 'pf_';
     /**
      * @var string 缓存文件后缀
      */
