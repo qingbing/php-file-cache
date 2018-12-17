@@ -71,7 +71,7 @@ class TestFileCache extends Tester
 
         // ====== 清空缓存 ======
         // 清空命名空间换成
-        $status = $cache->clear();
-        var_dump($status);
+//        $status = $cache->clear();
+//        var_dump($status);
     }
 }

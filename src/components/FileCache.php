@@ -14,17 +14,11 @@ defined("CACHE_PATH") or define("CACHE_PATH", dirname(realpath(".")) . "/runtime
 
 class FileCache extends Store
 {
-    /**
-     * @var string 命名空间
-     */
+    /* @var string 命名空间 */
     public $namespace = 'pf';
-    /**
-     * @var string key的前缀
-     */
+    /* @var string key的前缀 */
     public $prefix = 'pf_';
-    /**
-     * @var string 缓存文件后缀
-     */
+    /* @var string 缓存文件后缀 */
     public $suffix = 'bat';
 
     private $_cachePath;
