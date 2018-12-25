@@ -86,7 +86,7 @@ class FileCache extends Store
      */
     protected function getFile($id)
     {
-        return $this->getNamespacePath() . '/' . $id . $this->suffix;
+        return $this->getNamespacePath() . '/' . $id . '.' . $this->suffix;
     }
 
     /**
