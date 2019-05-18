@@ -64,7 +64,7 @@ class FileCache extends Store
         } else {
             $this->_namespacePath = "{$this->getCachePath()}/{$this->namespace}";
             if (!is_dir($this->_namespacePath)) {
-                @mkdir($this->_namespacePath, 0666);
+                @mkdir($this->_namespacePath, 0777);
             }
         }
     }
@@ -119,7 +119,7 @@ class FileCache extends Store
         $file = $this->getFile($id);
         if (file_put_contents($file, $value, LOCK_EX)) {
             $ttl = $ttl + time();
-            @chmod($file, 0666);
+            @chmod($file, 0777);
             return @touch($file, $ttl);
         }
         return false;
