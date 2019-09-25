@@ -23,6 +23,9 @@
         "qingbing/php-config": ">=1.0, <2.0",
         "qingbing/php-abstracts-store": ">=1.0, <2.0"
     },
+    "require-dev": {
+        "qingbing/php-debug-bootstrap": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "Components\\": "src/components"

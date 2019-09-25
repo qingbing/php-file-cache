@@ -9,7 +9,7 @@
 namespace Test;
 
 use Components\FileCache;
-use TestCore\Tester;
+use DBootstrap\Abstracts\Tester;
 
 class TestFileCache extends Tester
 {
