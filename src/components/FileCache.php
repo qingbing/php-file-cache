@@ -10,7 +10,7 @@ namespace Components;
 
 use Abstracts\Store;
 
-defined("CACHE_PATH") or define("CACHE_PATH", dirname(realpath(".")) . "/runtime");
+defined("RUNTIME_PATH") or define("RUNTIME_PATH", dirname(realpath(".")) . "/runtime");
 
 class FileCache extends Store
 {
@@ -31,7 +31,7 @@ class FileCache extends Store
     public function getCachePath()
     {
         if (null === $this->_cachePath) {
-            $this->setCachePath(CACHE_PATH);
+            $this->setCachePath(RUNTIME_PATH);
         }
         return $this->_cachePath;
     }
